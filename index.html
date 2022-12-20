@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>My-Weather-App</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light text-light bg-dark">
+        <a class="navbar-brand text-light" href="#">Weather-App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/about.html">About</a>
+            </li> 
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="city" class="form-control mr-sm-2" type="search" placeholder="Enter City Name" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" id="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!--------------END OF NAV--------------->
+
+
+
+    <h1 class="my-5 text-center">Weather of <span id="cityName"></span></h1>
+     <div class="container">
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 bg-dark text-light">
+                    <h4 class="my-0 fw-normal">Temperature</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title"> <span id="temp1"></span> <small class="fw-light">°C</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <h5>
+                      <li>Temperature is <span id="temp"></span></li>
+                      <li>Minimum Temperature is <span id="min_temp"></span></li>
+                      <li>Maximum Temperature is <span id="max_temp"></span></li>
+                      </h5>
+                      
+                       
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                  <div class="card-header py-3 bg-dark text-light">
+                    <h4 class="my-0 fw-normal">Humidity</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title"><span id="humidity1"></span><small class="fw-light">%</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <h5>
+                      <li>Humidity is <span id="humidity"></span></li>
+                      <li> Sunrise time  is <span id="sunrise"></span></li>
+                      <li>Sunset Time is <span id="sunset"></span></li>
+                      </h5> 
+                    </ul>
+                     </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-bg-primary border-primary bg-dark text-light">
+                    <h4 class="my-0 fw-normal">Wind Speed</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title"><span id="wind_speed1"></span><small class="fw-light">km/h</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <h5>
+                      <li>Wind Speed is <span id="wind_speed"></span></li>
+                      <li>Wind Degrees is <span id="wind_degrees"></span></li>
+                      <!-- <li>Cloud PCT is <span id="cloud_pct"></span></li> -->
+                      <li>Feels Like is <span id="feels_like"></span></li>
+                      </h5>
+                    </ul>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+            <div class="container">
+              <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                  </a>
+                  <span class="mb-3 mb-md-0 text-primary"><h5>© 2022 Half Engineer</h5></span>
+                </div> 
+              </footer>
+            </div> 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
