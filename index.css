@@ -4,3 +4,39 @@ body{
 h1{
     color: blue;
 }
+
+
+
+
+/* start 980 media quires */
+@media only screen and ( max-width: 1200px ) {
+    .resp{
+         
+     }
+	 
+}
+@media only screen and ( max-width: 980px ) {
+	 
+
+}
+/* end 360 media quires */
+
+/* start 768 media quires */
+@media only screen and ( max-width: 767px ) {
+    .resp{
+        width: 400px;
+        height: 250px;
+        color: white;
+        border: 5px solid blue;
+        background-color: red;
+     }
+	 
+}
+/* end 768 media quires */
+
+/* start 360 media quires */
+@media only screen and ( max-width: 360px ) {
+	 
+
+}
+/* end 360 media quires */
